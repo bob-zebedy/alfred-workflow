@@ -1,16 +1,16 @@
 # alfred-workflow
 
-## Keychain TOTP
+## Keychain OTP
 
 ```shell
 brew install oath-toolkit
 ```
 
-- 新增 TOTP
+- 新增 OTP
 ```shell
-totp+ <service-name:required> <secret-token:required> <times-step:optional:30>
+otp+ <service-name:required> <secret-token:required> <mode:optional:[SHA1(default)|SHA256|SHA512]> <times-step:optional[30(default)]>
 ```
-- 查询 TOTP
+- 查询 OTP
 ```shell
-totp <service-name:required>
+otp <service-name:required>
 ```
